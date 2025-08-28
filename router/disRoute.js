@@ -27,7 +27,7 @@ router.get('/alldatas', async (req, res) => {
   }
 });
 
-router.delete('/alldata/:id',async(req,res) => {
+router.delete('/alldatas/:id',async(req,res) => {
   await displaydb.findByIdAndDelete(req.params.id)
   res.json({message:"Deleted Successfully"})
 })
