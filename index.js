@@ -13,7 +13,7 @@ app.use(express.urlencoded({extended:true}))
 
 app.use('/display',disRouter)
 
-
+// welcome api
 app.get('/',(req,res)=>{
     res.send("Welcome to Expense Tracker")
 })
